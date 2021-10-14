@@ -1,0 +1,34 @@
+# Groupe 1
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+# Groupe 2
+User-agent: *
+Allow: /
+
+Sitemap: https://replit.com/@AngeliqueMunier/EVAL#index.html/sitemap.xml
+
+Le user-agent nommé "Googlebot" n'est pas autorisé à explorer le dossier http://example.com/nogooglebot/, ni ses sous-répertoires.
+
+Tous les autres user-agents peuvent accéder à l'ensemble du site. Cette partie peut être omise, car l'accès est supposé complet par principe, et cette précision ne change rien au résultat.
+
+Le fichier sitemap du site se trouve à l'adresse http://www.example.com/sitemap.xml.
+
+
+------------------------------------------------------------------------------------------------------------------------
+exercice robot.txt
+
+User-agent: Googlebot
+Disallow: /admin/
+Disallow: /documentation/
+Disallow: /deleted/
+
+User-agent: Yahoo! Slurp
+Disallow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: http://www.example.com/sitemap.xml
+
+------------------------------------------------------------------------------------------------------------------------
