@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta charset="description">
+    <meta name="title" content="FLVIAN - CRÉATEUR DE DESSINS">
+    <meta name="description" content="Site associatif de dessins">
+    <meta name="keywords" content="dessins, crayon, couleurs, origami, anmimaux">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="French">
+    <meta name="author" content="Angélique MUNIER">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FLVIAN</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="py-2">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"> <a class="nav-link" href="#">Evenements</a></li> 
+              </ul>
+              <span class="navbar-text"><a href="a_propos.html">A propos</a></span>
+            </div>
+        </nav>
+         <div class="row">
+            <nav class="col-12" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Evenements</li>
+                </ol>
+            </nav>
+          </div>
+      </header>
+        <main>
+            <section class="mt-4">
+                <div class="row justify-content-between">
+                  <h2>Participer à un événement : <small class="text-muted">Exposition Dessins</small></h2>
+                    <div class="card">
+                      <img src="img/tête-de-buffle-blanc-2.png" class="card-img-top rounded-lg" alt="buffle"height="500px">
+                        <div class="card-body">
+                            <h5 class="card-title">Buffle</h5>
+                                      <div class="float-right">
+                                          <button class="btn btn-dark" data-toggle="modal" data-target="#joinModal2" type="button">Information exposition</a></button>
+                                          <button class="btn btn-dark" data-toggle="modal" data-target="#joinModal" type="button">Je participe</button>
+                                      </div>
+                        </div>
+                    </div>
+            </section>
+                <section class="col">
+                    <h2>Participants à l'événement</h2>
+                    <table class="table table-hover table-sm">
+                        <caption>Liste des participants</caption>
+                        <thead class="thead-dark">
+                        <tr>
+                            <th>Nom</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Julie</td>
+                            <td>
+                                <button class="btn btn-sm btn-dark">Contacter</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Karine</td>
+                            <td>
+                                <button class="btn btn-sm btn-dark">Contacter</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="3" aria-valuemin="0" aria-valuemax="10">2 / 10 participants</div>
+                    </div>
+                     <div class="participation">
+                      <br>
+                      <button class="btn btn-dark" data-toggle="modal" data-target="#joinModal2" type="button">Information exposition</a></button>
+                      <button class="btn btn-dark" data-toggle="modal" data-target="#joinModal" type="button">Je participe</button>
+                    </div>
+                </section>
+            </div>
+              <div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="joinModalLabel">Participer à l'événement</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <form>
+
+                                  <div class="form-group">
+                                      <label for="name">Nom</label>
+                                      <input type="text" class="form-control" id="name" name="name">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="email">e-mail</label>
+                                      <input type="email" class="form-control" id="email" name="email">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="message">Message</label>
+                                      <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                              <button type="button" class="btn btn-primary">Envoyer le message</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <div class="modal fade" id="joinModal2" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="joinModalLabel">Informations</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="card-text">
+                                      <svg class="bi bi-map" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"xmlns="http://www.w3.org/2000/svg">
+                                          <path fill-rule="evenodd"d="M15.817.613A.5.5 0 0116 1v13a.5.5 0 01-.402.49l-5 1a.502.502 0 01-.196 0L5.5 14.51l-4.902.98A.5.5 0 010 15V2a.5.5 0 01.402-.49l5-1a.5.5 0 01.196 0l4.902.98 4.902-.98a.5.5 0 01.415.103zM10 2.41l-4-.8v11.98l4 .8V2.41zm1 11.98l4-.8V1.61l-4 .8v11.98zm-6-.8V1.61l-4 .8v11.98l4-.8z"clip-rule="evenodd"/>
+                                      </svg> Rouen
+                                  </p>
+                                    <p class="card-text">
+                                        <svg class="bi bi-calendar-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 2a2 2 0 012-2h12a2 2 0 012 2H0z"/>
+                                            <path fill-rule="evenodd" d="M0 3h16v11a2 2 0 01-2 2H2a2 2 0 01-2-2V3zm6.5 4a1 1 0 100-2 1 1 0 000 2zm4-1a1 1 0 11-2 0 1 1 0 012 0zm2 1a1 1 0 100-2 1 1 0 000 2zm-8 2a1 1 0 11-2 0 1 1 0 012 0zm2 1a1 1 0 100-2 1 1 0 000 2zm4-1a1 1 0 11-2 0 1 1 0 012 0zm2 1a1 1 0 100-2 1 1 0 000 2zm-8 2a1 1 0 11-2 0 1 1 0 012 0zm2 1a1 1 0 100-2 1 1 0 000 2zm4-1a1 1 0 11-2 0 1 1 0 012 0z"
+                                            clip-rule="evenodd"/>
+                                        </svg>
+                                        Aujourd'hui
+                                    </p>
+                                      <p class="card-text">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                          laboris nisi ut
+                                          aliquip ex ea commodo consequat.
+                                      </p>
+                                        <p class="card-text">
+                                            <svg class="bi bi-person-square" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V2a1 1 0 00-1-1zM2 0a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2H2z" clip-rule="evenodd"/>
+                                                <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                                            </svg>
+                                            <a href="mailto:munierangelique@gmail.com">munierangelique@gmail.com</a>
+                                        </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </section>
+                <div class="row">
+                    <nav class="col-12" aria-label="Page navigation example">
+                        <!-- Déclaration du composant + On indique qu'il sera placé à l'extrémité de la page -->
+                        <ul class="pagination justify-content-end">
+                            <!-- Item de navigation, ici désactivé car on se trouve en page 1 -->
+                            <li class="page-item disabled">
+                                <!-- Lien vers la page concernée -->
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <!-- Page courante -->
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="2eme_evenements.html">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+        </main>
+    </div><!--div container-->
+          <footer class="bg-dark text-center text-white">
+            <div class="text-center p-3">© 2021 Copyright:<a class="text-white" href="#">angeliquemunier.com</a></div>
+            <div class="text-left p-3">
+              <ul>
+                <li><a class="text-white" href="#">Mentions legales</a></li>
+                <li><a class="text-white" href="#"> Plan du site</a></li>
+                <li><a class="text-white" href="#">Contact</a></li>
+              </ul>  
+            </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  </body>
+</html>
